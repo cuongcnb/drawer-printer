@@ -1,0 +1,60 @@
+{
+  "_from": "git://github.com/tranvietanh1991/myclinic-drawer-printer.git",
+  "_id": "myclinic-drawer-printer@1.3.1",
+  "_inBundle": false,
+  "_integrity": "sha1-9QO9SFH8VoH5MqP65Gc6nxUwZ7U=",
+  "_location": "/myclinic-drawer-printer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "myclinic-drawer-printer@git://github.com/tranvietanh1991/myclinic-drawer-printer.git",
+    "name": "myclinic-drawer-printer",
+    "escapedName": "myclinic-drawer-printer",
+    "rawSpec": "git://github.com/tranvietanh1991/myclinic-drawer-printer.git",
+    "saveSpec": "git://github.com/tranvietanh1991/myclinic-drawer-printer.git",
+    "fetchSpec": "git://github.com/tranvietanh1991/myclinic-drawer-printer.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/tranvietanh1991/myclinic-drawer-printer.git#7c5176ccde4a63ebcc0fa2e3bf05b1391044092b",
+  "_spec": "myclinic-drawer-printer@git://github.com/tranvietanh1991/myclinic-drawer-printer.git",
+  "_where": "E:\\Projects\\KV-FNB-Printer",
+  "author": {
+    "name": "Hangil Chang"
+  },
+  "bin": {
+    "drawer-print": "bin/drawer-print.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hangilc/myclinic-drawer-printer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "conti": "^1.3.1",
+    "nan": "^2.4.0"
+  },
+  "deprecated": false,
+  "description": "A printing library for Windows OS",
+  "engine": "0.12.x",
+  "gypfile": true,
+  "homepage": "https://github.com/hangilc/myclinic-drawer-printer#readme",
+  "keywords": [
+    "Windows",
+    "printing"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "myclinic-drawer-printer",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hangilc/myclinic-drawer-printer.git"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "node test-print"
+  },
+  "version": "1.3.1"
+}
