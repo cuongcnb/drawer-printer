@@ -863,6 +863,11 @@ void setBkMode(const Nan::FunctionCallbackInfo<Value>& args){
 	args.GetReturnValue().Set(prev);
 }
 
+void getLastError(const Nan::FunctionCallbackInfo<Value>& args) {
+    int ret = GetLastError();
+    args.GetReturnValue().Set(ret);
+}
+
 void Init(v8::Local<v8::Object> exports){
 	if( !initWindowClass() ){
 		Nan::ThrowTypeError("initWindowClass failed");
@@ -920,6 +925,10 @@ void Init(v8::Local<v8::Object> exports){
 	exports->Set(Nan::New("printImageFromBytes").ToLocalChecked(),
 			Nan::New<v8::FunctionTemplate>(printImageFromBytes)->GetFunction());
 	// End Nam.Tran
+	// cuongnm
+	exports->Set(Nan::New("getLastError").ToLocalChecked(),
+    			Nan::New<v8::FunctionTemplate>(getLastError)->GetFunction());
+
 	exports->Set(Nan::New("selectObject").ToLocalChecked(),
 			Nan::New<v8::FunctionTemplate>(selectObject)->GetFunction());
 	exports->Set(Nan::New("setTextColor").ToLocalChecked(),
